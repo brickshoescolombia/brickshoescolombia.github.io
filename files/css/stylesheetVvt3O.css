@@ -1,0 +1,273 @@
+a:-webkit-any-link:focus {
+ outline:none;
+ blr:expression(this.onFocus=this.blur());
+}
+#Related_pro a:active {
+	color: red;
+ }
+
+.slick-slide {
+ transition: all ease-in-out .3s;
+ opacity: .2;
+}
+ 
+.slick-active {
+ opacity: 1;
+}
+.slick-current {
+ opacity: 1;
+}
+/* Slider */
+.slick-slider
+ {
+ position: relative;
+
+ display: block;
+ box-sizing: border-box;
+
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+
+ -webkit-touch-callout: none;
+ -khtml-user-select: none;
+ -ms-touch-action: pan-y;
+ touch-action: pan-y;
+ -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+ {
+
+ position: relative;
+
+ display: block;
+ overflow: hidden;
+
+ margin: 0;
+ padding: 0;
+}
+.slick-list:focus
+ {
+ outline: none;
+}
+.slick-list.dragging
+ {
+ cursor: pointer;
+ cursor: hand;
+}
+
+.slick-slider .slick-track ,
+.slick-slider .slick-list
+ {
+ -webkit-transform: translate3d(0 , 0 , 0);
+ -moz-transform: translate3d(0 , 0 , 0);
+ -ms-transform: translate3d(0 , 0 , 0);
+ -o-transform: translate3d(0 , 0 , 0);
+ transform: translate3d(0 , 0 , 0);
+
+}
+
+.slick-track
+ {
+ position: relative;
+ top: 0;
+ left: 0;
+
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+.slick-track:after
+ {
+ clear: both;
+}
+.slick-loading .slick-track
+ {
+ visibility: hidden;
+}
+
+.slick-slide
+ {
+ display: none;
+ float: left;
+ height: 100%;
+ min-height: 1px;
+ margin: 0 3px;
+}
+[dir='rtl'] .slick-slide
+ {
+ float: right;
+}
+.slick-slide img:link {
+	border: none;
+}
+.slick-slide img
+ {
+ display: block;
+}
+.slick-slide.slick-loading img
+ {
+ display: none;
+}
+.slick-slide.dragging img
+ {
+ pointer-events: none;
+}
+.slick-initialized .slick-slide
+ {
+ display: block;
+}
+.slick-loading .slick-slide
+ {
+ visibility: hidden;
+}
+.slick-vertical .slick-slide
+ {
+ display: block;
+
+ height: auto;
+
+ border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+ display: none;
+}
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+ {
+ background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+ {
+ font-family: 'slick';
+ font-weight: normal;
+ font-style: normal;
+
+ src: url('./fonts/slick.eot');
+ src: url('./fonts/slick.eot?#iefix') format('embedded-opentype') , url('./fonts/slick.woff') format('woff') , url('./fonts/slick.ttf') format('truetype') , url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev ,
+.slick-next
+ {
+ z-index: 9;
+ color: #a2a2a2;
+ line-height: 0;
+ position: absolute;
+ width: 20px;
+ height: auto;
+ padding: 0;
+ cursor: pointer;
+ border: none;
+ outline: none;
+ background: none;
+}
+#Related_pro .slick-prev ,#Related_pro .slick-next {
+	top: calc(50% - 30px);
+}
+#ndFL1nBMZ .slick-prev {
+	left: 20px;
+}
+#MsgfiwZzN .slick-prev {
+	left: 25px;
+}
+.ad-thumbs .slick-prev
+ {
+ left: -18px;
+}
+[dir='rtl'] .slick-prev
+ {
+ right: 5px;
+ left: auto;
+}
+.ad-thumbs .slick-next
+ {
+ right: -18px;
+}
+#ndFL1nBMZ .slick-next {
+	right: 20px;
+}
+#MsgfiwZzN .slick-next {
+	right: 25px;
+}
+[dir='rtl'] .slick-next
+ {
+ right: auto;
+ left: 5px;
+}
+#Related_pro .slick-prev {
+	left: -15px;	
+}
+#Related_pro .slick-next {
+	right: -15px;	
+}
+/* Dots */
+.slick-dots
+ {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ padding: 0;
+ margin: 0;
+ list-style: none;
+ text-align: center;
+}
+.slick-dots li
+ {
+ position: relative;
+
+ display: inline-block;
+
+ width: 10px;
+ height: 10px;
+ margin: 0 5px;
+ padding: 0;
+
+ cursor: pointer;
+}
+.slick-dots li button
+ {
+ font-size: 0;
+ line-height: 0;
+ display: block;
+ width: 10px;
+ height: 10px;
+ padding: 5px;
+ cursor: pointer;
+ color: #2e2e2e;
+ outline: none;
+ background: #fff;
+border: 1px solid #333;
+}
+.slick-dots .slick-active {
+background:#000;
+ border-radius:60px;
+ width: 12px;
+ height: 12px;
+}
+.slick-dots li button:hover ,
+.slick-dots li button:focus
+ {
+ outline: none;
+}
+.productsCol .slick-dots { display:none!important;}
+#Related_pro .slick-dots , #ndFL1nBMZ .slick-dots , #Es8KWZpE1 .slick-dots { display:none!important;}
+@media screen and (max-width:1024px) {
+#Related_pro section {
+ width: calc(100% - 40px);
+ margin: 0 auto;
+}
+}
+@media screen and (min-width:1400px) {
+#Es8KWZpE1 section {
+ width: calc(100% - 40px);
+ left:40px
+
+}
+
+}

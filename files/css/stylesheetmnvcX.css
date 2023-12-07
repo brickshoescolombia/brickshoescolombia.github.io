@@ -1,0 +1,69 @@
+div#nav-cat {
+     margin-top: 0em;
+     background-color: #ffffff;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     font-weight: bold;
+     font-size: 12px;
+}
+div#nav-cat ul {
+     margin: 0em; 
+     padding: 0em; 
+     width: 100%;  
+     z-index: 1000;
+     line-height: 14px;
+     border: none;
+background:#333;
+}
+
+div#nav-cat ul.level2 {background-color: #666;}
+div#nav-cat ul.level3 {background-color: #666;}
+div#nav-cat ul.level4 {background-color: #666;}
+div#nav-cat ul.level5 {background-color: #666;}
+div#nav-cat ul.level6 {background-color: #666;}
+
+div#nav-cat li {
+     z-index: 1; 
+     position: relative;
+     list-style: none; 
+     margin: 0;
+     margin-top: 0; /* change it to whatever space you want to put space between buttons*/
+     border-bottom: 1px solid black; /* <---this line may help or hinder IE menu shifting issues. */
+    /* background-color: #eee; Sets background of Menu items that DOES NOT have sub-menu's SYSTEM WIDE!!! */
+    
+}
+div#nav-cat li li {
+    margin-left: ;/* This puts space between menu and sub-menu, reccomend to leave at 0 unless you have over-lapping problems. */
+    background-color: ; /* sets the background of submenu ,WITHOUT submenus, when menu is HOVERED */
+} 
+div#nav-cat li:hover {background-color: #5E5E5E;} /* sets the HOVER background of any MENU item that DOES NOT have submenu items */
+div#nav-cat li.submenu {background-color: ;} /* sets the background of any menu item that DOES have submenu items */
+div#nav-cat li.submenu:hover {background-color: ;} /*sets the HOVER background of any menu item that DOES have submenu items */
+
+
+
+div#nav-cat li a {background: url(../images/left-hand.gif) no-repeat scroll 0 14px transparent; 
+    display: block;
+    padding: 9px 0px 11px 24px;
+    text-decoration: none; 
+ 
+    color: #ccc;
+margin-left: 9px;
+}
+
+div#nav-cat li a:hover{color:#fff;}
+
+div#nav-cat ul ul {
+    position: absolute; top: 0; left: 219px;
+    display: none; z-index: 1000;
+}
+
+div#nav-cat ul.level1 li.submenu:hover ul.level2, 
+div#nav-cat ul.level2 li.submenu:hover ul.level3,
+div#nav-cat ul.level3 li.submenu:hover ul.level4,
+div#nav-cat ul.level4 li.submenu:hover ul.level5,
+div#nav-cat ul.level5 li.submenu:hover ul.level6 {
+        display:block;
+}
+div#nav-cat ul.level3 li.submenu:hover ul.level4 { height: 200px;overflow: scroll;}
